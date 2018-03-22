@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+.designs .col-sm-4 {
+	padding:3%;
+}
+
+.gallery .pic {
+	padding:8px 5px;	
+}
+
+.gallery img {
+	height:250px !important;
+	width:100%;
+}
+
+.photos {
+	padding:5%;
+	padding-top:10px;
+}
+
+.pic360 .pano {
+	    width: 650px;
+	    height: 550px;
+	    margin: 0 auto;
+	    max-width: 100%;
+	}
+	
+	.info-area {
+	    margin:4em 0;
+	}
+	
+	pre {
+		background: #666;
+		color: #EEE;
+		border: 1px solid #222;
+		padding: 1em 1.5em;
+		overflow-x: auto;
+	}
+
+@media (max-width: 768px) {
+	.gallery .col-sm-4 {
+		width:33.333%;
+		float:left;
+		padding:2px 2px;
+	}
+}
+
+/*@media (max-width: 440px) {
+		#pano {
+		    height: 300px;
+		}
+	}*/
+
+/* The Modal (background) */
+.pic360 {
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+	padding-bottom:0px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+}
+
+/* Modal Content (Image) */
+.pic360 .modal-content {
+    margin: auto;
+    display: block;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.pic360 #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+	font-size:20px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.pic360 .modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.pic360 .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #CCCCCC;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+	opacity:1.0;
+}
+
+.pic360 .close:hover,
+.close:focus {
+    color: #CC0033;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+   .pic360  .modal-content {
+        width: 100%;
+    }
+}
+
+.stackpics img {
+	width:400px;
+	height:250px;
+	border:#333333 solid 2px;
+}
+
+.stackpics #img01 {
+	z-index:1;
+	opacity:0.4;
+	-ms-transform: rotate(-6deg); /* IE 9 */
+    -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
+    transform: rotate(-6deg);
+}
+
+.stackpics #img02 {
+	z-index:2;
+	margin-top:-250px;
+	margin-left:-5px;
+	opacity:0.6;
+	-ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+}
+
+.stackpics #img03 {
+	z-index:3;
+	margin-top:-250px;
+	margin-left:-10px;
+	opacity:0.8;
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}
+
+.stackpics #img04 {
+	z-index:4;
+	margin-top:-250px;
+	margin-left:-15px;
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
